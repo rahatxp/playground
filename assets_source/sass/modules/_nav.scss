@@ -1,0 +1,126 @@
+// nav
+.nav {
+    background: $color-base-white;
+    padding: rem-calc(45) 0 rem-calc(40);
+}
+
+.nav__list {
+    @include clearfix();
+}
+
+.nav__list__item {
+    width: unquote((80/6) + '%');
+    float: left;
+    text-align: center;
+    border-bottom: rem-calc(1) solid $color-dark-grey;
+    padding: rem-calc(10) 0;
+
+    @include breakpoint(medium up) {
+        padding: rem-calc(20) 0;
+        width: unquote((100/9) + '%');
+    }
+}
+
+.nav__list__item__link {
+    text-transform: uppercase;
+    font-size: rem-calc(24);
+    color: $color-dark-grey;
+    @include transition('color');
+
+    &:hover, .nav__list__item--active & {
+        color: $color-secondary;
+    }
+
+    @include breakpoint(medium up) {
+        font-size: rem-calc(16);
+    }
+}
+
+.nav__list__item--logo {
+    text-align: center;
+    padding: rem-calc(5) 0;
+    border-bottom: none;
+
+    img {
+        width: rem-calc(80);
+    }
+
+    @include breakpoint(small only) {
+        width: 20%;
+    }
+}
+
+.nav__list__item__text {
+    white-space: nowrap;
+
+    a {
+        color: $color-dark-grey;
+
+        &:hover, &.is--active {
+            color: $color-secondary;
+        }
+    }
+
+    @include breakpoint(small only) {
+        display: block;
+        padding-bottom: rem-calc(9);
+    }
+}
+
+.nav__list__item--icon {
+    @include breakpoint(medium up) {
+        padding: rem-calc(14) 0 rem-calc(15);
+    }
+
+    i {
+        @include breakpoint(medium up) {
+            font-size: rem-calc(26);
+        }
+    }
+}
+
+// nav vertical
+.nav__vertical {
+    padding: rem-calc(40) 0;
+    text-align: center;
+
+    // @include breakpoint(medium up) {
+    //     padding: rem-calc(100) 0;
+    // }
+
+    // @include breakpoint(large up) {
+    //     padding: rem-calc(500) 0;
+    // }
+}
+
+.nav__vertical__hl {
+    border-bottom: rem-calc(1) solid $color-primary;
+    display: inline-block;
+    padding: 0 0 rem-calc(15);
+    color: $color-primary;
+}
+
+.nav__vertical__list {
+    padding: rem-calc(10) 0 0;
+}
+
+.nav__vertical__list__item {
+    padding: rem-calc(3) 0;
+
+    .nav__vertical--inline & {
+        display: inline-block;
+        padding: 0 rem-calc(10);
+    }
+}
+
+.nav__vertical__list__item__link {
+    color: $color-primary;
+
+    &:hover {
+        color: $color-secondary;
+    }
+
+    .nav__vertical--inline & {
+        font-size: rem-calc(26);
+    }
+}

@@ -1,0 +1,40 @@
+// e.g @include clearfix();
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+// e.g @include font-face('FontName Medium', 'font-name-webfont', 'iefix', 'fontname');
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "../fonts/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+
+// transition
+@mixin transition($property, $transition-duration: 150ms, $transition-method: ease-in-out){
+    transition-property: #{$property};
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-method;
+}

@@ -1,0 +1,50 @@
+h1, h2, h3, h4, h5, h6,
+.header__h1, .header__h2, .header__h3, .header__h4, .header__h5, .header__h6 {
+    text-transform: uppercase;
+    @extend %font-bold;
+    color: $color-secondary;
+}
+
+p {
+    color: $color-dark-grey;
+}
+
+h2, .header__h2 {
+    font-size: rem-calc(22);
+    line-height: rem-calc(26);
+}
+
+h3, .header__h3 {
+    font-size: rem-calc(20);
+    line-height: rem-calc(26);
+}
+
+// h4, .header__h4 {
+//     font-size: rem-calc(20);
+//     line-height: rem-calc(26);
+// }
+
+// h5, .header__h5 {
+//     font-size: rem-calc(19);
+//     line-height: rem-calc(26);
+// }
+
+// h6, .header__h6 {
+//     font-size: rem-calc(18);
+//     line-height: rem-calc(26);
+// }
+
+
+.link__primary {
+    text-transform: uppercase;
+    @extend %font-bold;
+    color: $color-secondary;
+}
+
+.link__secondary {
+    color: $color-secondary;
+}
+
+.text__primary {
+    @extend %text__primary;
+}

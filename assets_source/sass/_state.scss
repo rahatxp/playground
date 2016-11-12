@@ -1,0 +1,23 @@
+.is--large--only {
+    display: none;
+
+    @include breakpoint(large up) {
+        display: block;
+    }
+}
+
+.is--medium--only {
+    display: none;
+
+    @include breakpoint(medium only) {
+        display: block;
+    }
+}
+
+.is--small--only {
+    display: none;
+
+    @include breakpoint(small only) {
+        display: block;
+    }
+}

@@ -1,0 +1,21 @@
+.article {
+    padding: rem-calc(32) 0 rem-calc(37);
+
+    h3 {
+        padding-bottom: rem-calc(20);
+    }
+
+    p {
+        padding-bottom: rem-calc(20);
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        color: $color-secondary;
+    }
+
+}

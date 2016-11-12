@@ -1,0 +1,41 @@
+{
+  "name": "nile-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtag/Nile_frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wtag/Nile_frontend/issues"
+  },
+  "homepage": "https://github.com/wtag/Nile_frontend#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "browserify": "^13.1.1",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10",
+    "imagemin-pngquant": "^5.0.0",
+    "jshint": "^2.9.4",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.2.4",
+    "jquery": "^3.1.1"
+  }
+}

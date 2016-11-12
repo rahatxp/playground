@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Source+Sans+Pro:400,600');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
+%font-regular {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+%font-bold {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+%font-heading {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
+
+
+%text__primary {
+    font-size: rem-calc(16);
+    line-height: rem-calc(22);
+    color: $color-dark-grey;
+
+        p:last-child {
+            padding-bottom: rem-calc(10);
+        }
+}
+
+body {
+    @extend %font-regular;
+    color: $color-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: rem-calc(16);
+    line-height: rem-calc(20);
+}
+
+::selection {
+    background: $color-primary;
+    color: $color-dark-grey;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: $color-primary;
+    color: $color-dark-grey;
+    text-shadow: none;
+}
